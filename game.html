@@ -55,6 +55,7 @@
         ctx.fillRect(platforms[0].x, platforms[0].y, platforms[0].width, platforms[0].height);
         ctx.fillRect(platforms[1].x, platforms[1].y, platforms[1].width,platforms[1]. height);
         ctx.fillRect(platforms[2].x, platforms[2].y, platforms[2].width,platforms[2]. height);
+        ctx.fillRect(platforms[3].x, platforms[3].y, platforms[3].width,platforms[3]. height);
     
     }
     // This function will be called when a key on the keyboard is pressed
@@ -120,6 +121,10 @@
         if(platforms[2].x < player.x && player.x < platforms[2].x + platforms[2].width &&
         platforms[2].y < player.y && player.y < platforms[2].y + platforms[2].height){
             i = 2;
+        }
+        if(platforms[3].x < player.x && player.x < platforms[3].x + platforms[3].width &&
+        platforms[3].y < player.y && player.y < platforms[3].y + platforms[3].height){
+            i = 3;
         }
         
         if (i > -1){
